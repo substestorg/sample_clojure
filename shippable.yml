@@ -2,6 +2,8 @@
 language: clojure
 
 archive: true
+env:
+ - secure: Vwu16OAfGpkUUB/qT2ua/txYtjejvt/peW0AfrtjtbhDWcKkLiQoxKUk9X8A+oZXZ3eZBOgQyN+q6iUzk15gFCLXTjPwc8jZFmJvL9258xaBDa7yA9PWZYRVY9poBo8vVoGquziWZT96iUbTl78AAs4XHhWtPPBYCrFblT6hkm45Pqwxnv7vKPb6rjBswdwPmhHXTV5m5NCDrNt/i9pveQFn1Kl9xjPHh2Aun2NWcwXnIRbmegdASJn4qgEbwcGkq4r0nM4aE/4Y9Bkg0ORUHS2DzAbzjVevuuuOfTmagiLM9+5XAvtvo42r99YRF0T/ISwuxwWn3//J0uIJLXy7xg==
 lein:
   - lein2
 
@@ -9,6 +11,7 @@ lein:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - echo $key1
 
 # Running the test with Leiningen
 script:
